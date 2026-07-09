@@ -5,6 +5,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:camera/camera.dart';
 import 'providers/app_state_provider.dart';
 import 'screens/main_screen.dart';
+import 'screens/permission_screen.dart';
 
 List<CameraDescription> cameras = [];
 
@@ -84,7 +85,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
           ),
           themeMode: appState.isDarkMode ? ThemeMode.dark : ThemeMode.light,
-          home: MainScreen(),
+          home: const PermissionScreen(),
         );
       },
     );
